@@ -1,7 +1,7 @@
 <template>
   <div class="member">
     <span> {{ name }} </span>
-    <p v-if="bio"> {{ bio }} </p>
+    <p v-if="bio">{{ bio }}</p>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
     name: String,
     bio: {
       type: String,
-      optional: true,
+      optional: true
     }
   }
 };
@@ -21,7 +21,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .member {
-  border: 1px solid rgba(0,0,0,0.125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   width: 250px;
   display: inline-block;
   margin: 10px;

@@ -1,7 +1,10 @@
 <template>
   <div id="nav">
     <div>
-      <router-link to="/"><div class="around-logo"><img class="logo" src="@/assets/logo_nott.png"/></div></router-link>
+      <router-link to="/"
+        ><div class="around-logo">
+          <img class="logo" src="@/assets/logo_nott.png" /></div
+      ></router-link>
     </div>
     <div>
       <router-link to="/">Home</router-link> |
@@ -9,8 +12,7 @@
       <router-link to="/projects">Work</router-link> |
       <router-link to="/team">Team</router-link>
     </div>
-    <div>
-    </div>
+    <div></div>
   </div>
 </template>
 
@@ -38,7 +40,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 3px solid rgba(0,0,0,0);
+  border: 3px solid rgba(0, 0, 0, 0);
   transition: 0.5s all;
 }
 
@@ -46,7 +48,7 @@
   border: 3px solid #42b983;
 }
 
-.around-logo:hover .logo{
+.around-logo:hover .logo {
 }
 .logo {
   width: 40px;
@@ -59,7 +61,7 @@
   grid-template-columns: 1fr auto 1fr;
 }
 
-#nav>div {
+#nav > div {
   align-self: center;
 }
 </style>

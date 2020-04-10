@@ -26,7 +26,12 @@ export default {
 
 <style scoped>
 .content {
-background: rgb(255,255,255);
-background: linear-gradient(157deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 74%, rgba(68,185,131,1) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    157deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 74%,
+    rgba(68, 185, 131, 1) 100%
+  );
 }
 </style>

@@ -1,12 +1,18 @@
 <template>
-  <section>
-  <div>
-    <h1>Work</h1>
-    <div class="project-list">
-      <Hack :cmp="project.card" v-for="project in projects" :key="project.name"/>
-    </div>
+  <div class="view-root">
+    <section>
+      <div>
+        <h1>Work</h1>
+        <div class="project-list">
+          <Hack
+            :cmp="project.card"
+            v-for="project in projects"
+            :key="project.name"
+          />
+        </div>
+      </div>
+    </section>
   </div>
-  </section>
 </template>
 
 <script>
@@ -18,9 +24,9 @@ const Hack = {
   render: function(c) {
     return c(this.cmp, { props: this.child_props });
   }
-}
+};
 
-let projects =  [];
+let projects = [];
 
 export function setProjects(p) {
   projects = p;
@@ -29,11 +35,10 @@ export function setProjects(p) {
 export default {
   name: "Projects",
   components: {
-    Hack,
+    Hack
   },
   data: () => ({
-    projects,
-  }),
-}
-
+    projects
+  })
+};
 </script>
