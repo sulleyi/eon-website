@@ -1,10 +1,12 @@
 <template>
+  <section>
   <div>
-    <h1>Projects</h1>
-    <div class="project-list" v-for="project in projects" :key="project.name">
-      <Hack :cmp="project.card" />
+    <h1>Work</h1>
+    <div class="project-list">
+      <Hack :cmp="project.card" v-for="project in projects" :key="project.name"/>
     </div>
   </div>
+  </section>
 </template>
 
 <script>

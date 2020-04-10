@@ -1,7 +1,11 @@
 <template>
-  <div>
-    <h1>Breakfast Page!</h1>
-    <p>Breakfast info!</p>
+  <div class="view-root">
+    <section>
+      <div>
+        <h1>Breakfast Page!</h1>
+        <p>Breakfast info!</p>
+      </div>
+    </section>
   </div>
 </template>
 

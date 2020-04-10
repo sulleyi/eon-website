@@ -3,6 +3,7 @@ import BreakfastCard from "./BreakfastCard.vue";
 import LandingPage, { setProjects } from "./LandingPage.vue";
 
 let projects = [
+  // add an entry like this one when you make a new project page/card
   {
     name: "breakfast",
     card: BreakfastCard,
@@ -12,6 +13,7 @@ let projects = [
       component: Breakfast
     }
   }
+  // new entries here
 ];
 
 // bind projects for the loading view

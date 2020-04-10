@@ -2,7 +2,7 @@
   <div class="view-root" ref="root">
     <section class="start">
       <div>
-        <img class="big-logo" alt="Vue logo" src="@/assets/logo.png" />
+        <img class="big-logo" alt="Eon logo" src="@/assets/logo.png" />
         <div class="tagline" v-scroll-to="'#about-section'">
           <h4> You have the power to make a change. </h4>
           <div>

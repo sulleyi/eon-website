@@ -14,5 +14,5 @@ export default [
   { name: "Charlie" },
   { name: "Ian" },
   { name: "Tati" },
-  { name: "Catherine" },
+  { name: "Catherine" }
 ];
