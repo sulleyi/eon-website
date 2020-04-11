@@ -28,7 +28,6 @@ body.snap {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   height: 100vh;
   width: 100vw;
   padding: 0;
@@ -39,10 +38,15 @@ body.snap {
   top: 0;
 }
 section {
-  height: 100vh;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
+}
+section:first-child {
+  height: 100vh;
+}
+section:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 .view-root>section:first-child>div:first-child {
   padding-top: 100px;

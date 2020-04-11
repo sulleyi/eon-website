@@ -1,12 +1,12 @@
 <template>
   <div class="view-root">
     <section>
-      <div>
+      <div class="content">
         <h1>Work</h1>
         <div class="project-list">
           <Hack
-            :cmp="project.card"
             v-for="project in projects"
+            :cmp="project.card"
             :key="project.name"
           />
         </div>
@@ -42,3 +42,16 @@ export default {
   })
 };
 </script>
+
+<style scoped>
+.content {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    157deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 74%,
+    rgba(233, 79, 55, 1) 74%,
+    rgba(233, 79, 55, 1) 100%
+  );
+}
+</style>

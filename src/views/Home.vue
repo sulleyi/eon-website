@@ -46,7 +46,12 @@
         </div>
       </div>
     </section>
-    <section class="contact"></section>
+    <section class="contact">
+      <div>
+        <h1>Contact Us</h1>
+
+      </div>
+    </section>
   </div>
 </template>
 
@@ -86,13 +91,21 @@ div:hover > .down-arrow {
 }
 section.about {
   background: #eee;
+  color: #333;
 }
 .three-col {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 75px;
 }
 .three-col > div {
-  padding: 10px;
+  padding: 30px;
+}
+.three-col > div:first-child {
+  border-right: 1px solid rgba(0,0,0,0.125);
+}
+.three-col > div:last-child {
+  border-left: 1px solid rgba(0,0,0,0.125);
 }
 .tagline > h4 {
   box-shadow: 10px 10px black;
