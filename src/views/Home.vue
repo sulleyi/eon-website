@@ -49,7 +49,6 @@
     <section class="contact">
       <div>
         <h1>Contact Us</h1>
-
       </div>
     </section>
   </div>
@@ -102,10 +101,10 @@ section.about {
   padding: 30px;
 }
 .three-col > div:first-child {
-  border-right: 1px solid rgba(0,0,0,0.125);
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
 }
 .three-col > div:last-child {
-  border-left: 1px solid rgba(0,0,0,0.125);
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 .tagline > h4 {
   box-shadow: 10px 10px black;

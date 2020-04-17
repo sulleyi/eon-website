@@ -2,7 +2,8 @@ export default [
   { name: "Sai" },
   {
     name: "Charlie McVicker",
-    bio: "I'm making the website!"
+    bio:
+      "This is my bio. I'm new to the EON team! I am helping make the website."
   },
   { name: "Blake" },
   { name: "Melany" },
