@@ -6,7 +6,6 @@ import Team from "@/views/Team.vue";
 import { projectRoutes } from "@/projects";
 
 Vue.use(VueRouter);
-console.log(projectRoutes);
 
 const routes = [
   {

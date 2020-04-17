@@ -46,9 +46,24 @@
         </div>
       </div>
     </section>
+    <section>
+      <div>
+        <h1>Work</h1>
+        <div>
+          <img class="feature-img" src="@/assets/breakfast_sample.png"/>
+        </div>
+      </div>
+    </section>
     <section class="contact">
       <div>
         <h1>Contact Us</h1>
+        <p>Find us on <a href="https://www.instagram.com/eon_union/">Instagram</a></p>
+        <p>Something doesn't look right? Reach out to <a href="mailto:charlie@mcvickernet.com">charlie@mcvickernet.com</a></p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <p> Copyright (c) 2020 Charles McVicker and Ian Sulley </p>
       </div>
     </section>
   </div>
@@ -66,6 +81,9 @@ export default {
 </script>
 
 <style scoped>
+.feature-img {
+  border-radius: 10px;
+}
 .big-logo {
   width: 40%;
 }
@@ -88,17 +106,18 @@ div:hover > .down-arrow {
   position: absolute;
   padding-bottom: 20px;
 }
-section.about {
+section:nth-child(2n) {
   background: #eee;
   color: #333;
 }
 .three-col {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0 75px;
+  padding: 30px 75px;
 }
 .three-col > div {
-  padding: 30px;
+  padding: 0 30px;
+  margin: 30px 0;
 }
 .three-col > div:first-child {
   border-right: 1px solid rgba(0, 0, 0, 0.125);
