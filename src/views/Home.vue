@@ -50,20 +50,26 @@
       <div>
         <h1>Work</h1>
         <div>
-          <img class="feature-img" src="@/assets/breakfast_sample.png"/>
+          <img class="feature-img" src="@/assets/breakfast_sample.png" />
         </div>
       </div>
     </section>
     <section class="contact">
       <div>
         <h1>Contact Us</h1>
-        <p>Find us on <a href="https://www.instagram.com/eon_union/">Instagram</a></p>
-        <p>Something doesn't look right? Reach out to <a href="mailto:charlie@mcvickernet.com">charlie@mcvickernet.com</a></p>
+        <p>
+          Find us on
+          <a href="https://www.instagram.com/eon_union/">Instagram</a>
+        </p>
+        <p>
+          Something doesn't look right? Reach out to
+          <a href="mailto:charlie@mcvickernet.com">charlie@mcvickernet.com</a>
+        </p>
       </div>
     </section>
     <section>
       <div>
-        <p> Copyright (c) 2020 Charles McVicker and Ian Sulley </p>
+        <p>Copyright (c) 2020 Charles McVicker and Ian Sulley</p>
       </div>
     </section>
   </div>
