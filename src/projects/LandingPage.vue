@@ -4,9 +4,9 @@
       <div class="content">
         <h1>Work</h1>
         <div class="project-list">
-          <Hack
+          <Card
             v-for="project in projects"
-            :cmp="project.card"
+            v-bind="project"
             :key="project.name"
           />
         </div>
@@ -16,15 +16,7 @@
 </template>
 
 <script>
-const Hack = {
-  props: {
-    cmp: Object,
-    child_props: Object
-  },
-  render: function(c) {
-    return c(this.cmp, { props: this.child_props });
-  }
-};
+import Card from './Card.vue';
 
 let projects = [];
 
@@ -35,7 +27,7 @@ export function setProjects(p) {
 export default {
   name: "Projects",
   components: {
-    Hack
+    Card
   },
   data: () => ({
     projects
