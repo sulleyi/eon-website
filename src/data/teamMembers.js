@@ -3,7 +3,8 @@ export default [
   {
     name: "Charlie McVicker",
     bio:
-      "This is my bio. I'm new to the EON team! I am helping make the website."
+      "This is my bio. I'm new to the EON team! I am helping make the website.",
+    profilePic: require("@/assets/tes.jpg")
   },
   { name: "Blake" },
   { name: "Melany" },
