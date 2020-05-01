@@ -50,9 +50,11 @@ export default {
   );
 }
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .3s ease;
+  transition: all .3s ease;
+  top: 0;
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;
+  top: -250px;
 }
 </style>

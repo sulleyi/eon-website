@@ -1,5 +1,5 @@
 <template>
-  <div class="modal">
+  <div class="modal" @click="topLevelClick($event)" ref="root">
     <div class="wrapper">
       <div class="content">
         <span class="close-btn" @click="close">X</span>
@@ -32,6 +32,11 @@ export default {
   methods: {
     close() {
       this.$emit('close');
+    },
+    topLevelClick(e) {
+      if(e.srcElement == this.$refs.root) {
+        this.close();
+      }
     }
   }
 };
@@ -45,6 +50,7 @@ export default {
   right: 0;
   z-index: 999;
   background: #eeeeeeaa;
+  font-size: 1.25em;
 }
 .wrapper {
   background: #fff;
@@ -55,10 +61,11 @@ export default {
   display: grid;
   grid-template-columns: auto 1fr;
   box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.125);
+  padding: 50px;
 }
 .profile-pic {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   margin: 20px;
   padding: 20px;
