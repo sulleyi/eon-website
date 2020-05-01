@@ -1,7 +1,7 @@
 import Breakfast from "./Breakfast.vue";
-import LandingPage, { setProjects } from "./LandingPage.vue";
+import LandingPage from "@/views/LandingPage.vue";
 
-let projects = [
+let projectsIndex = [
   // add an entry like this one when you make a new project page/card
   {
     name: "breakfast",
@@ -9,15 +9,16 @@ let projects = [
       path: "/projects/breakfast",
       name: "project-breakfast",
       component: Breakfast
-    }
+    },
+    bio: "Breakfast is tasty"
   }
   // new entries here
 ];
 
 // bind projects for the loading view
-setProjects(projects);
+//setProjects(projectsIndex);
 
-const projectRoutes = projects.map(({ route }) => route);
+const projectRoutes = projectsIndex.map(({ route }) => route);
 
 projectRoutes.push({
   path: "/projects",
@@ -25,4 +26,5 @@ projectRoutes.push({
   component: LandingPage
 });
 
+export { projectsIndex };
 export { projectRoutes };

@@ -5,9 +5,9 @@
         <h1>Work</h1>
         <div class="project-list">
           <Card
-            v-for="project in projects"
+            v-for="(project, i) in projects"
             v-bind="project"
-            :key="project.name"
+            :key="i"
           />
         </div>
       </div>
@@ -16,22 +16,20 @@
 </template>
 
 <script>
-import Card from './Card.vue';
+import Card from '@/components/Card.vue';
+import { projectsIndex } from '@/projects/index.js'
+//let projects = [];
 
-let projects = [];
-
-export function setProjects(p) {
-  projects = p;
-}
+//export function setProjects(p) {
+//  projects = p;
+//}
 
 export default {
   name: "Projects",
   components: {
     Card
   },
-  data: () => ({
-    projects
-  })
+  data: () => ({  projects: projectsIndex  })
 };
 </script>
 
