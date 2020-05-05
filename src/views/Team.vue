@@ -27,8 +27,8 @@ export default {
   },
   data: () => ({ team: teamMembers, showFeatured: false, featuredProfile: {} }),
   methods: {
-    showProfile(profile) {
-      this.featuredProfile = profile;
+    showProfile(profileId) {
+      this.featuredProfile = this.team[profileId];
       this.showFeatured = true;
     },
     closeProfile() {

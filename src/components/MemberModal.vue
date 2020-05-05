@@ -8,7 +8,11 @@
         </div>
         <div>
           <h1>{{ name }}</h1>
+          <h2 v-if="fields">{{ fields }}</h2>
           <p>{{ bio }}</p>
+          <p v-if="email">
+            Contact: <a target="_BLANK" rel="noopener noreferrer"  :href="'mailto:'+email">{{ email }}</a>
+          </p>
         </div>
       </div>
     </div>
@@ -28,6 +32,14 @@ export default {
       type: String,
       optional: true
     },
+    fields: {
+      type: String,
+      optional: true
+    },
+    email: {
+      type: String,
+      optional: true
+    }
   },
   methods: {
     close() {
@@ -78,5 +90,17 @@ export default {
   font-weight: bold;
   cursor: pointer;
   font-size: 1.5em;
+}
+h2 {
+  font-weight: normal;
+  font-style: italic;
+  margin: -10px 0;
+  color: #333;
+  font-size: 1em;
+  text-align: right;
+}
+p {
+  text-align: left;
+  white-space: pre-line;
 }
 </style>

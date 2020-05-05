@@ -19,11 +19,11 @@ export default {
     profilePic: {
       type: String,
       optional: true
-    },
+    }
   },
   methods: {
     showModal() {
-      this.$emit('showProfile', this.$props);
+      this.$emit('showProfile', this.$vnode.key);
     }
   }
 };
