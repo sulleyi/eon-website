@@ -1,5 +1,4 @@
 import Breakfast from "./Breakfast.vue";
-import LandingPage from "@/views/LandingPage.vue";
 
 let projectsIndex = [
   // add an entry like this one when you make a new project page/card
@@ -19,12 +18,6 @@ let projectsIndex = [
 //setProjects(projectsIndex);
 
 const projectRoutes = projectsIndex.map(({ route }) => route);
-
-projectRoutes.push({
-  path: "/projects",
-  name: "projects",
-  component: LandingPage
-});
 
 export { projectsIndex };
 export { projectRoutes };
