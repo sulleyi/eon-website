@@ -1,6 +1,3 @@
-
-
-
 <template>
   <div class="card">
     <span> {{ name }} </span>

@@ -4,11 +4,7 @@
       <div class="content">
         <h1>Work</h1>
         <div class="project-list">
-          <Card
-            v-for="(project, i) in projects"
-            v-bind="project"
-            :key="i"
-          />
+          <Card v-for="(project, i) in projects" v-bind="project" :key="i" />
         </div>
       </div>
     </section>
@@ -16,8 +12,8 @@
 </template>
 
 <script>
-import Card from '@/components/Card.vue';
-import { projectsIndex } from '@/projects/index.js'
+import Card from "@/components/Card.vue";
+import { projectsIndex } from "@/projects/index.js";
 //let projects = [];
 
 //export function setProjects(p) {
@@ -29,7 +25,7 @@ export default {
   components: {
     Card
   },
-  data: () => ({  projects: projectsIndex  })
+  data: () => ({ projects: projectsIndex })
 };
 </script>
 
