@@ -3,11 +3,20 @@
     <section>
       <div class="content">
         <transition name="fade">
-          <MemberModal @close="closeProfile" v-if="showFeatured" v-bind="featuredProfile"/>
+          <MemberModal
+            @close="closeProfile"
+            v-if="showFeatured"
+            v-bind="featuredProfile"
+          />
         </transition>
         <h1>Our Team</h1>
         <div>
-          <MemberCard v-for="(member, i) in team" :key="i" v-bind="member" @showProfile="showProfile"/>
+          <MemberCard
+            v-for="(member, i) in team"
+            :key="i"
+            v-bind="member"
+            @showProfile="showProfile"
+          />
         </div>
       </div>
     </section>
@@ -49,11 +58,13 @@ export default {
     rgba(68, 185, 131, 1) 100%
   );
 }
-.fade-enter-active, .fade-leave-active {
-  transition: all .3s ease;
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
   top: 0;
 }
-.fade-enter, .fade-leave-to {
+.fade-enter,
+.fade-leave-to {
   opacity: 0;
   top: -250px;
 }

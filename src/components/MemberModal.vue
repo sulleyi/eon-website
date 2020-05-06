@@ -4,14 +4,20 @@
       <div class="content">
         <span class="close-btn" @click="close">X</span>
         <div>
-          <img class="profile-pic" :src="profilePic"/>
+          <img class="profile-pic" :src="profilePic" />
         </div>
         <div>
           <h1>{{ name }}</h1>
           <h2 v-if="fields">{{ fields }}</h2>
           <p>{{ bio }}</p>
           <p v-if="email">
-            Contact: <a target="_BLANK" rel="noopener noreferrer"  :href="'mailto:'+email">{{ email }}</a>
+            Contact:
+            <a
+              target="_BLANK"
+              rel="noopener noreferrer"
+              :href="'mailto:' + email"
+              >{{ email }}</a
+            >
           </p>
         </div>
       </div>
@@ -43,10 +49,10 @@ export default {
   },
   methods: {
     close() {
-      this.$emit('close');
+      this.$emit("close");
     },
     topLevelClick(e) {
-      if(e.srcElement == this.$refs.root) {
+      if (e.srcElement == this.$refs.root) {
         this.close();
       }
     }
@@ -72,7 +78,7 @@ export default {
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
-  box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.125);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.125);
   padding: 50px;
 }
 .profile-pic {

@@ -2,7 +2,9 @@
   <div class="member" @click="showModal">
     <div class="img-wrapper">
       <div class="filter"></div>
-      <img class="profile-pic" :src="profilePic"></div>
+      <img class="profile-pic" :src="profilePic" />
+    </div>
+
     <span> {{ name }} </span>
   </div>
 </template>
@@ -23,7 +25,7 @@ export default {
   },
   methods: {
     showModal() {
-      this.$emit('showProfile', this.$vnode.key);
+      this.$emit("showProfile", this.$vnode.key);
     }
   }
 };
@@ -63,7 +65,7 @@ export default {
   background: linear-gradient(
     157deg,
     rgba(68, 185, 131, 0.75) 0%,
-    rgba(68, 185, 131, 0.50) 74%,
+    rgba(68, 185, 131, 0.5) 74%,
     rgba(68, 185, 131, 0.75) 100%
   );
 }
@@ -79,7 +81,7 @@ export default {
   margin: 10px;
   border-radius: 10px;
   padding: 10px;
-  background: rgba(255,255,255,0.25);
+  background: rgba(255, 255, 255, 0.25);
 }
 .member span {
   display: block;
