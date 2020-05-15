@@ -41,5 +41,12 @@ export default [
     bio:
       "Hello! I am a Mathematics major, Economics minor, and member of the Class of 2021. I never really understood entrepreneurship until I went to an EON meeting and then I was hooked. I have had the pleasure to join this group in building our culture of innovation from the start. I help plan the EON Speaker Series which we envision as a way to inspire more students to embrace their creative side and implement meaningful change. In my free time you might find me improving my self-taught guitar skills, crushing it on the racquetball courts, or shredding up the glades on my skis.",
     fields: "Mathematics and Economics"
-  }
+  },
+  {
+    name: "Emma Lee",
+    profilePic: require("@/assets/profile-pictures/lemma.png"),
+    bio: "Hey all! My name is Emma, last name Lee (not to be confused with Emily). Growing up with a mother who was a ceramic artist I learned the value of creativity at a young age and even though I'm not an artistic in a classical sense have always been inspired to create. As a founding member of EON I wanted to develop an organization which would break down the silos which I think currently ensconce entrepreneurship to help make it accessible to people of all trades, with hopes of empowering others to see their ideas materialize. I truly believe revolutionary change is not possible without collaboration that brings together people from diverse backgrounds and with diverse ways of thinking, so please reach out to me if you have any ideas about how we can make this world a better place.",
+    fields: "Political Science, Environmental Policy, and Anthropology",
+    email: "emma.rs.lee@gmail.com"
+  },
 ];
