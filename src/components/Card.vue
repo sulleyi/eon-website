@@ -1,7 +1,10 @@
 <template>
   <div class="card">
-    <span> {{ name }} </span>
-    <p v-if="bio">{{ bio }}</p>
+
+      <span> {{ name }} </span>
+    <div class="content">
+      <p v-if="bio">{{ bio }}</p>
+    </div>
   </div>
 </template>
 
@@ -25,9 +28,24 @@ export default {
   padding: 10px;
   display: inline-block;
   max-width: 200px;
+  margin: 10px;
+  cursor: pointer;
 }
 .card span {
   display: block;
   text-align: center;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 10px auto;
+}
+.content {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 10px auto;
+
+
+
 }
 </style>

@@ -9,9 +9,18 @@ let projectsIndex = [
       name: "project-breakfast",
       component: Breakfast
     },
-    bio: "Breakfast is tasty"
-  }
+    bio: "Breakfast is tasty. I like to eat bacon eggs and cereal. I like juice too but it has too much sugar."
+  },
   // new entries here
+  {
+    name: "speaker series",
+    route: {
+      path: "/speaker/series",
+      name: "project-speaker-series",
+    },
+    bio: "i like listening to people talk"
+
+  }
 ];
 
 // bind projects for the loading view
