@@ -86,6 +86,24 @@ export default {
 };
 </script>
 
+<style>
+.three-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 75px;
+}
+.three-col > div {
+  padding: 0 30px;
+  margin: 30px 0;
+}
+.three-col > div:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+.three-col > div:last-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+}
+</style>
+
 <style scoped>
 .feature-img {
   border-radius: 10px;
@@ -115,21 +133,6 @@ div:hover > .down-arrow {
 section:nth-child(2n) {
   background: #eee;
   color: #333;
-}
-.three-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 30px 75px;
-}
-.three-col > div {
-  padding: 0 30px;
-  margin: 30px 0;
-}
-.three-col > div:first-child {
-  border-right: 1px solid rgba(0, 0, 0, 0.125);
-}
-.three-col > div:last-child {
-  border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 .tagline > h4 {
   box-shadow: 10px 10px black;

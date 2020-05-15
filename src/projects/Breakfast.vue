@@ -6,30 +6,50 @@
           <h1>Early Riser Breakfast</h1>
           <p class="test">
             <mark>
-              The first project that came out of EON’s Think Tanks was Early
-              Morning Breakfast. A dilemma we found on campus was there were no
-              dining options for students who were up early on weekends (which
-              does happen on a college campus!).
+              8-10AM <br />
+              West Dining Hall<br />
+              Every Saturday and Sunday
             </mark>
           </p>
         </div>
       </div>
     </section>
     <section>
-      <div class="split">
-        <div class="img-wrapper">
-          <img src="@/assets/breakfast_sample.png" />
+      <div class="three-col">
+        <div>
+          <h2>Cook for yourself</h2>
+          <div class="img-wrapper">
+            <img src="@/assets/breakfast/pan.jpg">
+          </div>
         </div>
+        <div>
+          <h2>Meet other early risers</h2>
+          <div class="img-wrapper">
+            <img src="@/assets/breakfast/friends.jpeg">
+          </div>
+        </div>
+        <div>
+          <h2>Have fun</h2>
+          <div class="img-wrapper">
+            <img src="@/assets/breakfast/cook.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="">
+        <h3>The Story</h3>
         <p>
-          Fall term, EON began serving breakfast at Minervas from 8-10 am from
-          local businesses, including Bruegger’s Bagels, Lorenzo’s Cafe, Union
-          Cafe and more. This created a close-knit of community between early
-          rising students, many of whom wouldn’t have met otherwise. Winter
-          term, EON began working with Dining Services to open West Dining Hall
-          open at 8 am (instead of regularly at 10)! This was completely student
-          run, with Chef U style eggs, breakfast sandwiches, pastries, bagels,
-          and so much more. Although we are sad we‘re unable to continue spring
-          term, we’re looking forward to coming back in the Fall!
+        The first project that came out of EON’s Think Tanks was Early Morning Breakfast. A dilemma we found on campus was there were no dining options for students who were up early on weekends (which does happen on a college campus!).
+        </p>
+        <p>
+        Fall term, EON began serving breakfast at Minervas from 8-10 am from local businesses, including Bruegger’s Bagels, Lorenzo’s Cafe, Union Cafe and more. This created a close-knit of community between early rising students, many of whom wouldn’t have met otherwise. 
+        </p>
+        <p>
+        Winter term, EON began working with Dining Services to open West Dining Hall open at 8 am (instead of regularly at 10)! This was completely student run, with Chef U style eggs, breakfast sandwiches, pastries, bagels, and so much more.
+        </p>
+        <p>
+        Although we are sad we‘re unable to continue spring term, we’re looking forward to coming back in the Fall!
         </p>
       </div>
     </section>
@@ -43,6 +63,10 @@ export default {
 </script>
 
 <style scoped>
+.three-col > div .img-wrapper {
+  width: 100%;
+  height: 200px;
+}
 .first-page {
   display: grid;
   grid-template-rows: 1fr;
@@ -57,20 +81,43 @@ h1 {
   margin: 40px;
   font-size: 4em;
   color: white;
-  background: rgba(0,0,0,0.225);
+  background: rgba(0, 0, 0, 0.225);
+}
+
+h2 {
+  margin: 25px;
+  font-size: 1.75em;
+  border-bottom: 1px solid rgba(0,0,0,0.125);
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+ul.inline {
+  display: flex;
+  padding: 10px;
+  margin: 40px;
+  list-style-type: none;
+}
+
+ul.inline li {
+  flex: 1;
+  text-decoration: underline;
+  font-size: 1.2em;
 }
 
 .fixed-bg {
   overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
-  margin: -30px;
-  margin-top: 0;
 }
 
 #top-img {
   background-image: url("~@/assets/breakfast/feature.jpeg");
   position: relative;
+  margin: -30px;
+  margin-top: 0;
 }
 
 .split {
@@ -83,21 +130,23 @@ h1 {
   width: 100%;
   max-height: 100%;
 }
-p {
-  padding: 0 30px;
-  margin: 0;
-  font-size: 1.5em;
-}
 
+p {
+  font-size: 1.25em;
+  margin: 50px auto;
+  width: 500px;
+  text-align: justify;
+}
 .test {
   position: absolute;
   right: 50px;
-  width: 450px;
-  font-size: 1.5em;
+  width: 500px;
+  font-size: 2.5em;
   bottom: 50px;
   text-align: right;
   line-height: 2em;
   border-radius: 5px;
+  margin: 0;
 }
 .test mark {
   display: inline;
