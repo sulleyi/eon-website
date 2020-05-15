@@ -50,7 +50,7 @@
       <div>
         <h1>Work</h1>
         <div>
-          <img class="feature-img" src="@/assets/breakfast_sample.png" />
+          Lorem ipsum, ...
         </div>
       </div>
     </section>
