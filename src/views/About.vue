@@ -57,6 +57,9 @@
           </div>
         </div>
       </div>
+      <div>
+        <h1>EON is simply a place where people can solve problems in whatever capacity they desire.</h1>
+      </div>
     </section>
   </div>
 </template>
@@ -86,20 +89,19 @@ export default{
 
 
 .mission-statements{
-  vertical-align: center;
-  margin: auto;
-  display:block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  padding: 25px;
-  padding-bottom: 300px;
+  padding: 10px;
+
 
 }
+
 .statement1{
-  display: block;
+  display: inline-block;
   background-color:grey;
-  width:300px;
   margin:20px;
-  padding-bottom:25px;
+  padding-bottom:5px;
   background-color: lightgrey;
   border: 5px;
   border-style: outset;
@@ -107,11 +109,11 @@ export default{
 }
 
 .statement2{
-  display: block;
+  display: inline-block;
+  vertical-align: center;
   background-color: grey;
   margin: 20px;
-  width: 300px;
-  padding-bottom: 25px;
+  padding-bottom: 5px;
   background-color: lightgrey;
   border: 5px;
   border-style: outset;
@@ -119,16 +121,16 @@ export default{
 }
 
 .statement3{
-  display: block;
+  display: inline-block;
   background-color: lightgrey;
   border: 5px;
   border-style: outset;
   border-color: grey;
-  width:300px;
   margin: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 5px;
 }
 
-
+h1{
+}
 
 </style>
