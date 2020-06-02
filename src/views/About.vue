@@ -104,7 +104,7 @@ export default{
 }
 
 .statements{
-  padding-bottom:20px;
+  
 }
 
 .tagline > h4 {
@@ -122,5 +122,12 @@ export default{
   box-shadow: 10px 10px #42b983;
 }
 
+p, h3{
+  padding: 10px;
+  margin:25px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius:5px;
+}
 
 </style>
