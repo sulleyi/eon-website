@@ -78,12 +78,20 @@ export default{
 
 <style scoped>
 .content{
-  margin: 40px 100px;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    157deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 74%,
+    rgba(233, 79, 55, 1) 74%,
+    rgba(233, 79, 55, 1) 100%
+  );
 }
 
 .header{
   text-align: left;
-  padding: 10px;
+  padding: 25px;
 }
 
 
@@ -95,6 +103,9 @@ export default{
   padding:10px;
 }
 
+.statements{
+  padding-bottom:20px;
+}
 
 .tagline > h4 {
   box-shadow: 10px 10px black;
