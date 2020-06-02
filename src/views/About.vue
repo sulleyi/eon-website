@@ -6,60 +6,59 @@
           <h1>Entrepreneurs of the Nott (EON) is a group that looks to...</h1>
         </div>
 
-        <div class="mission-statements">
-          <div class="statement1">
-            <div
+        <div class="taglines">
+            <div class="tagline"
             @mouseover="hover1 = true"
-            @mouseleave="hover1 = false"
             >
-              <h2><strong>inspire</strong> design thinking</h2>
+              <h4><strong>inspire</strong> design thinking</h4>
             </div>
-            <div v-if="hover1">
-              <p>
-                We <strong>inspire</strong> by encouraging campus-wide collaboration at Union
-                and exposing the student body to an entrepreneurial mindset,
-                demonstrating that the ambiguous concept of “entrepreneurship”,
-                (and the skill sets that come with it) has more personal and
-                professional application than commonly thought.
-              </p>
-            </div>
-          </div>
-          <div class="statement2">
-            <div
+
+
+            <div class="tagline"
             @mouseover="hover2 = true"
-            @mouseleave="hover2 = false"
+
             >
-              <h2><strong>empower</strong> through ideation and hands-on projects</h2>
+              <h4><strong>empower</strong> through ideation and hands-on projects</h4>
             </div>
-            <div class="tag" v-if="hover2">
-              <p>
-                We <strong>empower</strong> through speaker series, providing a platform
-                for students to connect with alumni, the local community,
-                and resources to see their ideas materialize into tangible
-                results and/or products.
-              </p>
-            </div>
-          </div>
-          <div class="statement3">
-            <div
+
+
+            <div class="tagline"
             @mouseover="hover3 = true"
-            @mouseleave="hover3 = false"
             >
-              <h2><strong>create change</strong> within and outside of Union.</h2>
+              <h4><strong>create change</strong> within and outside of Union.</h4>
             </div>
-            <div v-if="hover3">
-              <p>
-                We <strong>create change</strong> through weekly “Think Tanks” workshop sessions,
-                have monthly meetings, hold design thinking workshops, and trips
-                to local businesses.
-              </p>
-            </div>
+
+        </div>
+        <div class="statements">
+          <div v-if="hover1">
+            <p>
+              We <strong>inspire</strong> by encouraging campus-wide collaboration at Union
+              and exposing the student body to an entrepreneurial mindset,
+              demonstrating that the ambiguous concept of “entrepreneurship”,
+              (and the skill sets that come with it) has more personal and
+              professional application than commonly thought.
+            </p>
+          </div>
+          <div v-if="hover2">
+            <p>
+              We <strong>empower</strong> through speaker series, providing a platform
+              for students to connect with alumni, the local community,
+              and resources to see their ideas materialize into tangible
+              results and/or products.
+            </p>
+          </div>
+          <div v-if="hover3">
+            <p>
+              We <strong>create change</strong> through weekly “Think Tanks” workshop sessions,
+              have monthly meetings, hold design thinking workshops, and trips
+              to local businesses.
+            </p>
           </div>
         </div>
-      </div>
       <div>
-        <h1>EON is simply a place where people can solve problems in whatever capacity they desire.</h1>
+        <h3>EON is simply a place where people can solve problems in whatever capacity they desire.</h3>
       </div>
+    </div>
     </section>
   </div>
 </template>
@@ -79,58 +78,38 @@ export default{
 
 <style scoped>
 .content{
-  margin: 10px;
-
+  margin: 40px 100px;
 }
+
 .header{
   text-align: left;
   padding: 10px;
 }
 
 
-.mission-statements{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
+.taglines{
+
+  display: flex;
+  justify-content:space-around;
+  margin: 10px;
+  padding:10px;
+}
+
+
+.tagline > h4 {
+  box-shadow: 10px 10px black;
+  border: 1px solid black;
   padding: 10px;
-
-
-}
-
-.statement1{
+  margin: 20px auto;
+  width: auto;
   display: inline-block;
-  background-color:grey;
-  margin:20px;
-  padding-bottom:5px;
-  background-color: lightgrey;
-  border: 5px;
-  border-style: outset;
-  border-color: grey;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.tagline > h4:hover {
+  box-shadow: 10px 10px #42b983;
 }
 
-.statement2{
-  display: inline-block;
-  vertical-align: center;
-  background-color: grey;
-  margin: 20px;
-  padding-bottom: 5px;
-  background-color: lightgrey;
-  border: 5px;
-  border-style: outset;
-  border-color: grey;
-}
-
-.statement3{
-  display: inline-block;
-  background-color: lightgrey;
-  border: 5px;
-  border-style: outset;
-  border-color: grey;
-  margin: 20px;
-  padding-bottom: 5px;
-}
-
-h1{
-}
 
 </style>
