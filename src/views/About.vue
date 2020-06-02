@@ -100,7 +100,7 @@ export default{
   box-shadow: 10px 10px black;
   border: 1px solid black;
   padding: 10px;
-  margin: 20px auto;
+  margin: 20px 20px;
   width: auto;
   display: inline-block;
   background: rgba(0, 0, 0, 0);
