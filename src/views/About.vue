@@ -5,12 +5,12 @@
         <div class="header">
           <h1>Entrepreneurs of the Nott (EON) is a group that looks to...</h1>
         </div>
-
+        <div class ="body">
         <div class="taglines">
             <div class="tagline"
             @mouseover="hover1 = true"
             >
-              <h4><strong>inspire</strong></h4>
+              <h2><strong>inspire</strong></h2>
             </div>
 
 
@@ -18,19 +18,19 @@
             @mouseover="hover2 = true"
 
             >
-              <h4><strong>empower</strong></h4>
+              <h2><strong>empower</strong></h2>
             </div>
 
 
             <div class="tagline"
             @mouseover="hover3 = true"
             >
-              <h4><strong>create change</strong></h4>
+              <h2><strong>create change</strong></h2>
             </div>
 
         </div>
         <div class="statements">
-          <div v-if="hover1">
+          <div class="first" v-if="hover1">
             <p>
               We <strong>inspire</strong> by encouraging campus-wide collaboration at Union
               and exposing the student body to an entrepreneurial mindset,
@@ -58,6 +58,7 @@
       <div>
         <h3>EON is simply a place where people can solve problems in whatever capacity they desire.</h3>
       </div>
+    </div>
     </div>
     </section>
   </div>
@@ -88,6 +89,11 @@ export default{
   );
 }
 
+.body{
+margin: 0px 225px;
+
+}
+
 .header{
   text-align: left;
   padding: 25px;
@@ -106,7 +112,7 @@ export default{
 
 }
 
-.tagline > h4 {
+.tagline > h2 {
   box-shadow: 10px 10px black;
   border: 1px solid black;
   padding: 10px;
@@ -117,7 +123,7 @@ export default{
   cursor: pointer;
   transition: box-shadow 0.2s;
 }
-.tagline > h4:hover {
+.tagline > h2:hover{
   box-shadow: 10px 10px #42b983;
 }
 
@@ -128,5 +134,7 @@ p, h3{
   border: 1px solid black;
   border-radius:5px;
 }
+
+
 
 </style>
