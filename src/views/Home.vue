@@ -63,7 +63,7 @@
         </p>
         <p>
           Something doesn't look right? Reach out to
-          <a href="mailto:charlie@mcvickernet.com">charlie@mcvickernet.com</a>
+          <a href="mailto:sulleyi@union.edu">sulleyi@union.edu</a>
         </p>
       </div>
     </section>
