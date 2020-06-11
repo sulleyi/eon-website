@@ -10,7 +10,7 @@
             <div class="tagline"
             @mouseover="hover1 = true"
             >
-              <h4><strong>inspire</strong> design thinking</h4>
+              <h4><strong>inspire</strong></h4>
             </div>
 
 
@@ -18,14 +18,14 @@
             @mouseover="hover2 = true"
 
             >
-              <h4><strong>empower</strong> through ideation and hands-on projects</h4>
+              <h4><strong>empower</strong></h4>
             </div>
 
 
             <div class="tagline"
             @mouseover="hover3 = true"
             >
-              <h4><strong>create change</strong> within and outside of Union.</h4>
+              <h4><strong>create change</strong></h4>
             </div>
 
         </div>
@@ -78,7 +78,6 @@ export default{
 
 <style scoped>
 .content{
-
   background: rgb(255, 255, 255);
   background: linear-gradient(
     157deg,
@@ -104,7 +103,7 @@ export default{
 }
 
 .statements{
-  
+
 }
 
 .tagline > h4 {
