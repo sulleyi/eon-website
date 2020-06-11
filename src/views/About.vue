@@ -161,7 +161,9 @@ h3{
 }
 
 .passive > p{
-  transition: transform 0.2s;
+  transition-property: transform box-shadow;
+  transition-duration: .75s;
+  transition-timing-function: ease;
   transform: scale(1.0);
   box-shadow: 10px 10px black;
   border: 1px solid black;
@@ -169,14 +171,16 @@ h3{
   width: auto;
   display: inline-block;
   background-color: white;
-  transition: box-shadow 0.2s;
+
 
 }
 
 .active > p{
-  transition: transform 0.2s;
-  transform: scale(1.3);
+  transition-property: transform box-shadow;
+  transition-duration: .75s;
+  transition-timing-function: ease;
   margin: 30px 0px;
+  transform: scale(1.3);
   box-shadow: 10px 10px #42b983;
 }
 
