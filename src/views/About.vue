@@ -8,14 +8,16 @@
         <div class ="body">
         <div class="taglines">
             <div class="tagline"
-            @mouseover="hover1 = true"
+            @mouseover="changeState1"
+            @mouseout="changeState1"
             >
               <h2><strong>inspire</strong></h2>
             </div>
 
 
             <div class="tagline"
-            @mouseover="hover2 = true"
+            @mouseover="changeState2"
+            @mouseout="changeState2"
 
             >
               <h2><strong>empower</strong></h2>
@@ -23,14 +25,15 @@
 
 
             <div class="tagline"
-            @mouseover="hover3 = true"
+            @mouseover="changeState3"
+            @mouseout="changeState3"
             >
               <h2><strong>create change</strong></h2>
             </div>
 
         </div>
         <div class="statements">
-          <div class="first" v-if="hover1">
+          <div class="passive" :class="hoverState1">
             <p>
               We <strong>inspire</strong> by encouraging campus-wide collaboration at Union
               and exposing the student body to an entrepreneurial mindset,
@@ -39,7 +42,7 @@
               professional application than commonly thought.
             </p>
           </div>
-          <div v-if="hover2">
+          <div class="passive" :class="hoverState2">
             <p>
               We <strong>empower</strong> through speaker series, providing a platform
               for students to connect with alumni, the local community,
@@ -47,7 +50,7 @@
               results and/or products.
             </p>
           </div>
-          <div v-if="hover3">
+          <div class="passive" :class="hoverState3">
             <p>
               We <strong>create change</strong> through weekly “Think Tanks” workshop sessions,
               have monthly meetings, hold design thinking workshops, and trips
@@ -69,12 +72,40 @@
 export default{
   data(){
     return{
-      hover1: false,
-      hover2: false,
-      hover3: false
+      hoverActive1: false,
+      hoverActive2: false,
+      hoverActive3: false
     };
-  }
-}
+  },
+
+  computed: {
+    hoverState1() {
+      return this.hoverActive1 ? 'active': 'passive';
+    },
+
+    hoverState2() {
+      return this.hoverActive2 ? 'active': 'passive';
+    },
+
+    hoverState3() {
+      return this.hoverActive3 ? 'active': 'passive';
+    },
+  },
+
+  methods: {
+    changeState1() {
+      this.hoverActive1 = !this.hoverActive1;
+    },
+    changeState2() {
+      this.hoverActive2 = !this.hoverActive2;
+    },
+    changeState3() {
+      this.hoverActive3 = !this.hoverActive3;
+    }
+  },
+};
+
+
 </script>
 
 <style scoped>
@@ -103,21 +134,15 @@ margin: 0px 225px;
 .taglines{
 
   display: flex;
-  justify-content:space-around;
-  margin: 10px;
+  justify-content:space-between;
   padding:10px;
 }
 
-.statements{
-
-}
 
 .tagline > h2 {
   box-shadow: 10px 10px black;
   border: 1px solid black;
   padding: 10px;
-  margin: 20px 20px;
-  width: auto;
   display: inline-block;
   background: rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -127,7 +152,7 @@ margin: 0px 225px;
   box-shadow: 10px 10px #42b983;
 }
 
-p, h3{
+h3{
   padding: 10px;
   margin:25px;
   background-color: white;
@@ -135,6 +160,24 @@ p, h3{
   border-radius:5px;
 }
 
+.passive > p{
+  transition: transform 0.2s;
+  transform: scale(1.0);
+  box-shadow: 10px 10px black;
+  border: 1px solid black;
+  padding: 10px;
+  width: auto;
+  display: inline-block;
+  background-color: white;
+  transition: box-shadow 0.2s;
 
+}
+
+.active > p{
+  transition: transform 0.2s;
+  transform: scale(1.3);
+  margin: 30px 0px;
+  box-shadow: 10px 10px #42b983;
+}
 
 </style>
