@@ -134,7 +134,7 @@ margin: 0px 225px;
 .taglines{
 
   display: flex;
-  justify-content:space-between;
+  justify-content:space-around;
   padding:10px;
 }
 
