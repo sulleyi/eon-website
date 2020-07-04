@@ -34,7 +34,12 @@ export default [
       "I am a Mechanical Engineering Major Visual Arts Minor who cares about creativity. I am a collaborator, a resource linker, and a critical thinker who doesn’t claim expertise in any one field, but is dedicated to exploring the viability of all options in order to compile the best possible solution to any given problem. I possess eclectic experience and self-taught skills but I believe that if you love an end-product, then others will too.  Creativity is a muscle and Think Tank not only provides me with intense exercise, but also targets new creative muscle groups I didn’t know existed by flooding me with refreshingly different points of view.",
     fields: "Mechanical Engineering and Visual Arts"
   },
-  { name: "Ian Sully" },
+  {
+    name: "Ian Sulley",
+    bio:
+    "Im here to work on the website!",
+    fields: "Computer Engineering, Mathematics, and Data Analytics"
+  },
   {
     name: "Steven Crouch",
     profilePic: require("@/assets/profile-pictures/steven.png"),
