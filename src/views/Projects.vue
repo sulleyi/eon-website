@@ -14,6 +14,7 @@
 <script>
 import Card from "@/components/Card.vue";
 import { projectsIndex } from "@/projects/index.js";
+
 //let projects = [];
 
 //export function setProjects(p) {
@@ -31,7 +32,7 @@ export default {
 
 <style scoped>
 .content {
-  
+
   background: rgb(255, 255, 255);
   background: linear-gradient(
     157deg,

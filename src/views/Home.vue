@@ -48,9 +48,8 @@
     </section>
     <section>
       <div>
-        <h1>Work</h1>
         <div>
-          Lorem ipsum, ...
+          <cardCarousel />
         </div>
       </div>
     </section>
@@ -76,8 +75,12 @@
 </template>
 
 <script>
+import cardCarousel from "@/components/cardCarousel.vue";
 export default {
   name: "Home",
+  components: {
+    cardCarousel
+  },
   methods: {
     scrollDown() {
       document.getElementById("about-section").scrollIntoView();
