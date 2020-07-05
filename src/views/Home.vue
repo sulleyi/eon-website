@@ -49,7 +49,7 @@
     <section>
       <div>
         <div>
-          <cardCarousel />
+          <CardCarousel />
         </div>
       </div>
     </section>
@@ -75,11 +75,12 @@
 </template>
 
 <script>
-import cardCarousel from "@/components/cardCarousel.vue";
+
+import CardCarousel from "@/components/cardCarousel.vue";
 export default {
   name: "Home",
   components: {
-    cardCarousel
+    CardCarousel
   },
   methods: {
     scrollDown() {
