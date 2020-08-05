@@ -171,7 +171,7 @@ h1 {
   font-weight: 100;
   text-align: center;
   margin-bottom: 0;
-  color: #42b883;
+  color: black;
 }
 
 </style>

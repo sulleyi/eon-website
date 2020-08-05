@@ -2,7 +2,7 @@
   <div class="view-root">
     <section>
       <div class="content">
-        <h1>Work</h1>
+        <h1>Our Work</h1>
         <div class="project-list">
           <Card v-for="(project, i) in projects" v-bind="project" :key="i" />
         </div>

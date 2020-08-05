@@ -136,6 +136,7 @@ margin: 0px 225px;
   display: flex;
   justify-content:space-around;
   padding:10px;
+
 }
 
 
@@ -143,7 +144,9 @@ margin: 0px 225px;
   box-shadow: 10px 10px black;
   border: 1px solid black;
   padding: 10px;
-  display: inline-block;
+  display: flex;
+  justify-content:center;
+
   background: rgba(0, 0, 0, 0);
   cursor: pointer;
   transition: box-shadow 0.2s;
