@@ -9,7 +9,7 @@
             <div class="card-carousel--card" v-for="item in items" v-bind:key="item"><img src="https://placehold.it/200x200"/>
               <div class="card-carousel--card--footer">
                 <p>{{ item.name }}</p>
-                <p class = "description">{{ item. description}} </p>
+                <p class = "bio">{{ item.bio}} </p>
               </div>
             </div>
           </div>
@@ -29,12 +29,12 @@ export default {
       windowSize: 3,
       paginationFactor: 220,
       items: [
-        {name: 'Early Morning Breakfast', description: 'Providing a new breakfast option'},
-        {name: 'Speaker Series', description: 'Learing from industry leaders'},
-        {name: 'Newsletter', description: 'sharing campus oppurtunities'},
-        {name: 'Mentoring', description: 'we mentor people'},
-        {name: 'Blank Example', description: 'an example project tile'},
-        {name: 'Blank Example 2', description: 'a different example'},
+        {name: 'Early Morning Breakfast', bio: 'Providing a new breakfast option'},
+        {name: 'Speaker Series', bio: 'Inaugural Speaker Series event with Union Alumna who CoFounded and is the partner of Rosendale Venture Capital and Private Equity and the Founder and CEO of SP1ndle Industries.'},
+        {name: 'Newsletter', bio: 'sharing campus oppurtunities'},
+        {name: 'Mentoring', bio: 'we mentor people'},
+        {name: 'Blank Example', bio: 'an example project tile'},
+        {name: 'Blank Example 2', bio: 'a different example'},
       ]
     }
   },
@@ -154,7 +154,7 @@ body {
   color: #2c3e50;
   user-select: none;
 }
-.card-carousel-cards .card-carousel--card--footer p.description {
+.card-carousel-cards .card-carousel--card--footer p.bio {
   font-size: 11px;
   font-weight: 300;
   padding: 4px;

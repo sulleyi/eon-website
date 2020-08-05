@@ -3,7 +3,7 @@
 
       <span> {{ name }} </span>
     <div class="footer">
-      <p v-if="bio">{{ bio }}</p>
+      <p class="bio">{{ bio }}</p>
     </div>
   </div>
 </template>
@@ -30,6 +30,7 @@ export default {
   margin: 10px;
   cursor: pointer;
   background-color: white;
+  max-width: 210px;
 }
 
 .card img{
@@ -50,7 +51,22 @@ export default {
   font-weight: bold;
   margin: 10px auto;
 }
-.card .footer {
+
+
+.footer {
+  border-top: 0;
+  padding: 7px 15px;
+}
+.footer p {
+  padding: 3px 0;
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 19px;
+  font-weight: 500;
+  color: #2c3e50;
+  user-select: none;
+}
+.footer p.bio {
   font-size: 11px;
   font-weight: 300;
   padding: 4px;
@@ -59,8 +75,5 @@ export default {
   position: relative;
   margin-left: 4px;
   color: #666a73;
-  max-width: 200px;
-
-
 }
 </style>

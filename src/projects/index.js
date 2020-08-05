@@ -13,12 +13,12 @@ let projectsIndex = [
   },
 
   {
-    name: "Speaker Series",
+    name: "Speaker Series: David Dussault ‘00",
     route: {
-      path: "/speaker/series",
+      path: "projects/speaker-series/david-dussault",
       name: "project-speaker-series",
     },
-    bio: "i like listening to people talk"
+    bio: "Inaugural Speaker Series event with Union Alumna who CoFounded and is the partner of Rosendale Venture Capital and Private Equity and the Founder and CEO of SP1ndle Industries."
 
   },
 

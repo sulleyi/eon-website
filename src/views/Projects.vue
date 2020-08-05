@@ -32,7 +32,6 @@ export default {
 
 <style scoped>
 .content {
-
   background: rgb(255, 255, 255);
   background: linear-gradient(
     157deg,
@@ -43,4 +42,12 @@ export default {
   );
 
 }
+
+.project-list {
+  align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: span;
+}
+
 </style>
