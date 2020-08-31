@@ -15,7 +15,7 @@ let projectsIndex = [
   {
     name: "Speaker Series: David Dussault ‘00",
     route: {
-      path: "projects/speaker-series/david-dussault",
+      path: "/projects/speaker-series-david-dussault",
       name: "project-speaker-series",
     },
     bio: "Inaugural Speaker Series event with Union Alumna who CoFounded and is the partner of Rosendale Venture Capital and Private Equity and the Founder and CEO of SP1ndle Industries."
@@ -25,18 +25,18 @@ let projectsIndex = [
   {
     name: "Design Thinking Workshop",
     route: {
-      path: "/speaker/series",
-      name: "project-speaker-series",
+      path: "/projects/design-thinking-workshop",
+      name: "project-design-thinking-workshop",
     },
-    bio: "i like listening to people talk"
+    bio: "Create ideas to attack opportunities in the world that you care about."
 
   },
 
   {
     name: "Schenectady ARC",
     route: {
-      path: "/speaker/series",
-      name: "project-speaker-series",
+      path: "/projects/schenectady-arc",
+      name: "project-schenectady-arc",
     },
     bio: "i like listening to people talk"
 
@@ -45,8 +45,8 @@ let projectsIndex = [
   {
     name: "Newsletter",
     route: {
-      path: "/speaker/series",
-      name: "project-speaker-series",
+      path: "/projects/newsletter",
+      name: "project-newsletter",
     },
     bio: "i like listening to people talk"
 
@@ -55,8 +55,8 @@ let projectsIndex = [
   {
     name: "Website",
     route: {
-      path: "/speaker/series",
-      name: "project-speaker-series",
+      path: "/projects/website",
+      name: "project-website",
     },
     bio: "i like listening to people talk"
 
