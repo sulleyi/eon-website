@@ -44,10 +44,7 @@ export default {
 }
 
 .project-list {
-  align: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: span;
+  display: flex;
 }
 
 </style>

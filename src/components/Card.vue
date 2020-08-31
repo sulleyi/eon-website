@@ -52,7 +52,6 @@ export default {
   margin: 10px auto;
 }
 
-
 .footer {
   border-top: 0;
   padding: 7px 15px;
