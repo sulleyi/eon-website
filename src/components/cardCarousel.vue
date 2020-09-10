@@ -10,6 +10,7 @@
               <div class="card-carousel--card--footer">
                 <p>{{ item.name }}</p>
                 <p class = "bio">{{ item.bio}} </p>
+                <router-link :to="{ name: 'projects', params: {placeName: item.name } }">more..</router-link>
               </div>
             </div>
           </div>
@@ -21,21 +22,17 @@
 </template>
 
 <script>
+
+import projects from "@/projects/index.js"
+
 export default {
   name: "cardCarousel",
+  items: projects,
   data() {
     return {
       currentOffset: 0,
       windowSize: 3,
       paginationFactor: 220,
-      items: [
-        {name: 'Early Morning Breakfast', bio: 'Providing a new breakfast option'},
-        {name: 'Speaker Series', bio: 'Inaugural Speaker Series event with Union Alumna who CoFounded and is the partner of Rosendale Venture Capital and Private Equity and the Founder and CEO of SP1ndle Industries.'},
-        {name: 'Newsletter', bio: 'sharing campus oppurtunities'},
-        {name: 'Mentoring', bio: 'we mentor people'},
-        {name: 'Blank Example', bio: 'an example project tile'},
-        {name: 'Blank Example 2', bio: 'a different example'},
-      ]
     }
   },
   computed: {

@@ -1,12 +1,14 @@
 import Breakfast from "./Breakfast.vue";
+import SpeakerSeries from "./speakerSeries.vue";
 
 let projectsIndex = [
   // add an entry like this one when you make a new project page/card
   {
     name: "Early Morning Breakfast",
+    projectPic: "@/assets/feature.jpeg",
     route: {
       path: "/projects/breakfast",
-      name: "project-breakfast",
+      name: "breakfast",
       component: Breakfast
     },
     bio: "Breakfast is tasty. I like to eat bacon eggs and cereal. I like juice too but it has too much sugar."
@@ -14,19 +16,22 @@ let projectsIndex = [
 
   {
     name: "Speaker Series: David Dussault ‘00",
+    //projectPic: ,
     route: {
-      path: "/projects/speaker-series-david-dussault",
-      name: "project-speaker-series",
+      path: "/projects/speakerSeries",
+      name: "speakerSeries",
+      component:SpeakerSeries
     },
     bio: "Inaugural Speaker Series event with Union Alumna who CoFounded and is the partner of Rosendale Venture Capital and Private Equity and the Founder and CEO of SP1ndle Industries."
-
   },
 
   {
     name: "Design Thinking Workshop",
+    //projectPic: ,
     route: {
       path: "/projects/design-thinking-workshop",
       name: "project-design-thinking-workshop",
+      //component:
     },
     bio: "Create ideas to attack opportunities in the world that you care about."
 
@@ -34,6 +39,7 @@ let projectsIndex = [
 
   {
     name: "Schenectady ARC",
+    //projectPic: ,
     route: {
       path: "/projects/schenectady-arc",
       name: "project-schenectady-arc",
@@ -44,6 +50,7 @@ let projectsIndex = [
 
   {
     name: "Newsletter",
+    //projectPic: ,
     route: {
       path: "/projects/newsletter",
       name: "project-newsletter",
@@ -54,6 +61,7 @@ let projectsIndex = [
 
   {
     name: "Website",
+  //  projectPic: ,
     route: {
       path: "/projects/website",
       name: "project-website",
