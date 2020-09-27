@@ -1,9 +1,10 @@
 <template>
-  <div class="card"><img src="https://placehold.it/200x200"/>
-
+  <div class="card">
+    <img :src="projectPic"/>
       <span> {{ name }} </span>
     <div class="footer">
       <p class="bio">{{ bio }}</p>
+
     </div>
   </div>
 </template>
@@ -14,6 +15,10 @@ export default {
   props: {
     name: String,
     bio: {
+      type: String,
+      optional: true
+    },
+    projectPic: {
       type: String,
       optional: true
     }
@@ -39,6 +44,8 @@ export default {
   border-top-right-radius: 4px;
   transition: opacity 150ms linear;
   user-select: none;
+  height: 200px;
+  width: 200px;
 }
 
 .card img:hover{

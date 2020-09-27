@@ -4,7 +4,9 @@
       <div class="content">
         <h1>Our Work</h1>
         <div class="project-list">
-          <Card v-for="(project, i) in projects" v-bind="project" :key="i" />
+          <Card v-for="(project, i) in projects" v-bind="project" :key="i">
+              <router-link v-for="(project, i) in projects" v-bind:to="project.path" :key="i">Learn more</router-link>
+          </Card>
         </div>
       </div>
     </section>

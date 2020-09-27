@@ -77,6 +77,8 @@
 <script>
 
 import CardCarousel from "@/components/cardCarousel.vue";
+
+
 export default {
   name: "Home",
   components: {

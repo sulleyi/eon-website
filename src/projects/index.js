@@ -5,7 +5,7 @@ let projectsIndex = [
   // add an entry like this one when you make a new project page/card
   {
     name: "Early Morning Breakfast",
-    projectPic: "@/assets/feature.jpeg",
+    projectPic: require("@/assets/breakfast/feature.jpeg"),
     route: {
       path: "/projects/breakfast",
       name: "breakfast",
@@ -16,7 +16,7 @@ let projectsIndex = [
 
   {
     name: "Speaker Series: David Dussault ‘00",
-    //projectPic: ,
+    projectPic: require("@/assets/speaker-series/feature.jpeg"),
     route: {
       path: "/projects/speakerSeries",
       name: "speakerSeries",
@@ -27,7 +27,7 @@ let projectsIndex = [
 
   {
     name: "Design Thinking Workshop",
-    //projectPic: ,
+    projectPic: require("@/assets/design-thinking/feature.jpeg"),
     route: {
       path: "/projects/design-thinking-workshop",
       name: "project-design-thinking-workshop",

@@ -1,3 +1,4 @@
+@@ -0,0 +1,177 @@
 <template>
   <div class="carousel">
   <h1>Our Work</h1>
@@ -9,8 +10,7 @@
             <div class="card-carousel--card" v-for="item in items" v-bind:key="item"><img src="https://placehold.it/200x200"/>
               <div class="card-carousel--card--footer">
                 <p>{{ item.name }}</p>
-                <p class = "bio">{{ item.bio}} </p>
-                <router-link :to="{ name: 'projects', params: {placeName: item.name } }">more..</router-link>
+                <p class = "description">{{ item. description}} </p>
               </div>
             </div>
           </div>
@@ -22,17 +22,21 @@
 </template>
 
 <script>
-
-import projects from "@/projects/index.js"
-
 export default {
   name: "cardCarousel",
-  items: projects,
   data() {
     return {
       currentOffset: 0,
       windowSize: 3,
       paginationFactor: 220,
+      items: [
+        {name: 'Early Morning Breakfast', description: 'Providing a new breakfast option'},
+        {name: 'Speaker Series', description: 'Learing from industry leaders'},
+        {name: 'Newsletter', description: 'sharing campus oppurtunities'},
+        {name: 'Mentoring', description: 'we mentor people'},
+        {name: 'Blank Example', description: 'an example project tile'},
+        {name: 'Blank Example 2', description: 'a different example'},
+      ]
     }
   },
   computed: {
@@ -151,7 +155,7 @@ body {
   color: #2c3e50;
   user-select: none;
 }
-.card-carousel-cards .card-carousel--card--footer p.bio {
+.card-carousel-cards .card-carousel--card--footer p.description {
   font-size: 11px;
   font-weight: 300;
   padding: 4px;
@@ -168,7 +172,7 @@ h1 {
   font-weight: 100;
   text-align: center;
   margin-bottom: 0;
-  color: black;
+  color: #42b883;
 }
 
 </style>
