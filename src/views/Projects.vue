@@ -45,6 +45,7 @@ export default {
 
 .project-list {
   display: flex;
+  justify-content: center;
 }
 
 </style>
