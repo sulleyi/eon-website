@@ -20,7 +20,7 @@ let projectsIndex = [
     route: {
       path: "/projects/speakerSeries",
       name: "speakerSeries",
-      component:SpeakerSeries
+      component: SpeakerSeries
     },
     bio: "Inaugural Speaker Series event with Union Alumna who CoFounded and is the partner of Rosendale Venture Capital and Private Equity and the Founder and CEO of SP1ndle Industries."
   },
@@ -77,5 +77,4 @@ let projectsIndex = [
 
 const projectRoutes = projectsIndex.map(({ route }) => route);
 
-export { projectsIndex };
-export { projectRoutes };
+export { projectsIndex, projectRoutes };
