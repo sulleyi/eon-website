@@ -1,7 +1,7 @@
 <template>
-  <div class="card">
+  <div class="card" @click="navigate"><img src="https://placehold.it/200x200"/>
     <img :src="projectPic"/>
-      <span> {{ name }} </span>
+    <span> {{ name }} </span>
     <div class="footer">
       <p class="bio">{{ bio }}</p>
 
@@ -14,6 +14,9 @@ export default {
   name: "ProjectCard",
   props: {
     name: String,
+    route: {
+      path: String
+    },
     bio: {
       type: String,
       optional: true
@@ -21,6 +24,11 @@ export default {
     projectPic: {
       type: String,
       optional: true
+    }
+  },
+  methods: {
+    navigate() {
+      this.$router.push({ path: this.route.path });
     }
   }
 };
